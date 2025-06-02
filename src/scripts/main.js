@@ -367,21 +367,21 @@ people.forEach((person) => {
   const born = document.createElement('td');
   const died = document.createElement('td');
   const age = document.createElement('td');
-  const centry = document.createElement('td');
+  const century = document.createElement('td');
 
   nameOfPerson.textContent = person.name;
   gender.textContent = person.sex === 'm' ? 'Male' : 'Female';
   born.textContent = person.born;
   died.textContent = person.died;
   age.textContent = person.died - person.born;
-  centry.textContent = Math.ceil(person.died / 100);
+  century.textContent = Math.ceil(person.died / 100);
 
   row.appendChild(nameOfPerson);
   row.appendChild(gender);
   row.appendChild(born);
   row.appendChild(died);
   row.appendChild(age);
-  row.appendChild(centry);
+  row.appendChild(century);
 
   table.appendChild(row);
 });
